@@ -19,23 +19,23 @@ electronDebug({
 app.on('ready', () => {
   global.lx.event_app.on('main_window_created', (win) => {
     openDevTools(win.webContents)
-    installExtension(VUEJS_DEVTOOLS, { session: win.webContents.session })
-      .then((name: string) => {
-        console.log(`[main window] Added Extension:  ${name}`)
-      })
-      .catch((err: Error) => {
-        console.log('[main window] An error occurred: ', err)
-      })
+    // installExtension(VUEJS_DEVTOOLS, { session: win.webContents.session })
+    //   .then((name: string) => {
+    //     console.log(`[main window] Added Extension:  ${name}`)
+    //   })
+    //   .catch((err: Error) => {
+    //     console.log('[main window] An error occurred: ', err)
+    //   })
   })
   global.lx.event_app.on('desktop_lyric_window_created', (win) => {
     openDevTools(win.webContents)
-    installExtension(VUEJS_DEVTOOLS, { session: win.webContents.session })
-      .then((name: string) => {
-        console.log(`[lyric window] Added Extension:  ${name}`)
-      })
-      .catch((err: Error) => {
-        console.log('[lyric window] An error occurred: ', err)
-      })
+    // installExtension(VUEJS_DEVTOOLS, { session: win.webContents.session })
+    //   .then((name: string) => {
+    //     console.log(`[lyric window] Added Extension:  ${name}`)
+    //   })
+    //   .catch((err: Error) => {
+    //     console.log('[lyric window] An error occurred: ', err)
+    //   })
   })
 })
 

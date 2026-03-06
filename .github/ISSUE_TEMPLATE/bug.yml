@@ -29,8 +29,8 @@ body:
 - type: input
   id: version
   attributes:
-    label: LX Music 版本
-    description: 你使用什么版本的 LX Music？
+    label: Yusic 版本
+    description: 你使用什么版本的 Yusic？
     placeholder: 例如 2.9.0
   validations:
     required: true

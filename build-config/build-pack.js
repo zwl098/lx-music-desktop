@@ -68,7 +68,7 @@ const winOptions = {
     allowToChangeInstallationDirectory: true,
     // differentialPackage: true,
     license: './licenses/license.rtf',
-    shortcutName: 'LX Music',
+    shortcutName: 'Yusic',
   },
 }
 /**
@@ -87,9 +87,9 @@ const linuxOptions = {
       // https://specifications.freedesktop.org/desktop-entry-spec/latest/example.html
       // https://developer.gnome.org/documentation/guidelines/maintainer/integrating.html#desktop-files
       entry: {
-        Name: 'LX Music',
-        'Name[zh_CN]': 'LX Music',
-        'Name[zh_TW]': 'LX Music',
+        Name: 'Yusic',
+        'Name[zh_CN]': 'Yusic',
+        'Name[zh_TW]': 'Yusic',
         Encoding: 'UTF-8',
         MimeType: 'x-scheme-handler/lxmusic',
         StartupNotify: 'false',
@@ -128,7 +128,7 @@ const macOptions = {
         path: '/Applications',
       },
     ],
-    title: 'LX Music v${version}',
+    title: 'Yusic v${version}',
   },
 }
 
@@ -267,7 +267,7 @@ const createTarget = {
  * @param {*} packageType 包类型
  * @param {'onTagOrDraft' | 'always' | 'never'} publishType 发布类型
  */
-const build = async(target, arch, packageType, publishType) => {
+const build = async (target, arch, packageType, publishType) => {
   if (target == 'dir') {
     await builder.build({
       dir: true,

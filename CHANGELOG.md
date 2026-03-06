@@ -193,7 +193,7 @@ Linux 系统至少需要 `GLIBC_2.29` 版本才能运行。
 
 ## [2.8.0](https://github.com/lyswhut/lx-music-desktop/compare/v2.7.0...v2.8.0) - 2024-06-01
 
-我们发布了关于 LX Music 项目发展调整与新项目计划的说明，
+我们发布了关于 Yusic 项目发展调整与新项目计划的说明，
 详情看： https://github.com/lyswhut/lx-music-desktop/issues/1912
 
 ### 新增

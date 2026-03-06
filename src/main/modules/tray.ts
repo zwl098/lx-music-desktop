@@ -147,7 +147,7 @@ export const createTray = () => {
   // 托盘
   tray = new Tray(nativeImage.createFromPath(getIconPath(global.lx.appSetting['tray.themeId'])))
 
-  // tray.setToolTip('LX Music')
+  // tray.setToolTip('Yusic')
   // createMenu()
   tray.setIgnoreDoubleClickEvents(true)
   if (isWin) {
@@ -215,75 +215,75 @@ export const createMenu = () => {
   menu.push({ type: 'separator' })
   menu.push(global.lx.appSetting['desktopLyric.enable']
     ? {
-        label: i18n.getMessage('hide_win_lyric'),
-        click() {
-          handleUpdateConfig({ 'desktopLyric.enable': false })
-        },
-      }
+      label: i18n.getMessage('hide_win_lyric'),
+      click() {
+        handleUpdateConfig({ 'desktopLyric.enable': false })
+      },
+    }
     : {
-        label: i18n.getMessage('show_win_lyric'),
-        click() {
-          handleUpdateConfig({ 'desktopLyric.enable': true })
-        },
-      })
+      label: i18n.getMessage('show_win_lyric'),
+      click() {
+        handleUpdateConfig({ 'desktopLyric.enable': true })
+      },
+    })
   menu.push(global.lx.appSetting['desktopLyric.isLock']
     ? {
-        label: i18n.getMessage('unlock_win_lyric'),
-        click() {
-          handleUpdateConfig({ 'desktopLyric.isLock': false })
-        },
-      }
+      label: i18n.getMessage('unlock_win_lyric'),
+      click() {
+        handleUpdateConfig({ 'desktopLyric.isLock': false })
+      },
+    }
     : {
-        label: i18n.getMessage('lock_win_lyric'),
-        click() {
-          handleUpdateConfig({ 'desktopLyric.isLock': true })
-        },
-      })
+      label: i18n.getMessage('lock_win_lyric'),
+      click() {
+        handleUpdateConfig({ 'desktopLyric.isLock': true })
+      },
+    })
   menu.push(global.lx.appSetting['desktopLyric.isAlwaysOnTop']
     ? {
-        label: i18n.getMessage('untop_win_lyric'),
-        click() {
-          handleUpdateConfig({ 'desktopLyric.isAlwaysOnTop': false })
-        },
-      }
+      label: i18n.getMessage('untop_win_lyric'),
+      click() {
+        handleUpdateConfig({ 'desktopLyric.isAlwaysOnTop': false })
+      },
+    }
     : {
-        label: i18n.getMessage('top_win_lyric'),
-        click() {
-          handleUpdateConfig({ 'desktopLyric.isAlwaysOnTop': true })
-        },
-      })
+      label: i18n.getMessage('top_win_lyric'),
+      click() {
+        handleUpdateConfig({ 'desktopLyric.isAlwaysOnTop': true })
+      },
+    })
   if (isMac) {
     menu.push({ type: 'separator' })
     menu.push(isShowStatusBarLyric
       ? {
-          label: i18n.getMessage('hide_statusbar_lyric'),
-          click() {
-            handleUpdateConfig({ 'player.isShowStatusBarLyric': false })
-          },
-        }
+        label: i18n.getMessage('hide_statusbar_lyric'),
+        click() {
+          handleUpdateConfig({ 'player.isShowStatusBarLyric': false })
+        },
+      }
       : {
-          label: i18n.getMessage('show_statusbar_lyric'),
-          click() {
-            handleUpdateConfig({ 'player.isShowStatusBarLyric': true })
-          },
-        })
+        label: i18n.getMessage('show_statusbar_lyric'),
+        click() {
+          handleUpdateConfig({ 'player.isShowStatusBarLyric': true })
+        },
+      })
   }
   menu.push({ type: 'separator' })
   if (isExistMainWindow()) {
     const isShow = isShowMainWindow()
     menu.push(isShow
       ? {
-          label: i18n.getMessage('hide_win_main'),
-          click() {
-            hideMainWindow()
-          },
-        }
+        label: i18n.getMessage('hide_win_main'),
+        click() {
+          hideMainWindow()
+        },
+      }
       : {
-          label: i18n.getMessage('show_win_main'),
-          click() {
-            showMainWindow()
-          },
-        })
+        label: i18n.getMessage('show_win_main'),
+        click() {
+          showMainWindow()
+        },
+      })
   }
   menu.push({
     label: i18n.getMessage('exit'),
@@ -306,7 +306,7 @@ const setLyric = (lyricLineText?: string) => {
   }
 }
 
-const defaultTip = 'LX Music'
+const defaultTip = 'Yusic'
 const setTip = () => {
   if (!tray) return
 

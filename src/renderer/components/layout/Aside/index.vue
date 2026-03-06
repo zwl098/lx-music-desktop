@@ -1,7 +1,7 @@
 <template>
   <div :class="[$style.aside, { [$style.fullscreen]: isFullscreen }]">
     <ControlBtns v-if="appSetting['common.controlBtnPosition'] == 'left'" />
-    <div v-else :class="$style.logo">L X</div>
+    <div v-else :class="$style.logo" title="YUSIC">Y U</div>
     <NavBar />
   </div>
 </template>
@@ -49,7 +49,17 @@ import NavBar from './NavBar.vue'
   text-align: center;
   line-height: 50px;
   font-weight: bold;
-  // -webkit-app-region: no-drag;
+  // 添加平滑的过渡动画
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.3s ease;
+  user-select: none;
+  cursor: default;
+  -webkit-app-region: no-drag;
+
+  // 添加 Hover 悬停状态
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }
 
 </style>
