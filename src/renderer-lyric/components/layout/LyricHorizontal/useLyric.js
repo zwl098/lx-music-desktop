@@ -70,9 +70,9 @@ export default (isComputeHeight) => {
 
   const handleLyricDown = (target, x, y) => {
     if (target.classList.contains('font-lrc') ||
-        target.parentNode.classList.contains('font-lrc') ||
-        target.classList.contains('extended') ||
-        target.parentNode.classList.contains('extended')
+      target.parentNode.classList.contains('font-lrc') ||
+      target.classList.contains('extended') ||
+      target.parentNode.classList.contains('extended')
     ) {
       if (delayScrollTimeout) {
         clearTimeout(delayScrollTimeout)
@@ -87,7 +87,7 @@ export default (isComputeHeight) => {
       winEvent.msDownY = y
       winEvent.windowW = window.innerWidth
       winEvent.windowH = window.innerHeight
-      // https://github.com/lyswhut/lx-music-desktop/issues/2244
+      // https://github.com/lyswhut/Yusic-desktop/issues/2244
       if (isWin) setWindowResizeable(false)
     }
   }
@@ -116,7 +116,7 @@ export default (isComputeHeight) => {
       dom_lyric.value.scrollTop = msDownScrollY + msDownY - y
       startLyricScrollTimeout()
     } else if (winEvent.isMsDown) {
-      // https://github.com/lyswhut/lx-music-desktop/issues/2244
+      // https://github.com/lyswhut/Yusic-desktop/issues/2244
       if (isWin) {
         setWindowBounds({
           x: x - winEvent.msDownX,

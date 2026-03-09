@@ -1,5 +1,5 @@
 {
-  "name": "lx-music-desktop",
+  "name": "yusic-desktop",
   "version": "2.13.2",
   "description": "一个免费的音乐播放器",
   "main": "./dist/main.js",
@@ -90,7 +90,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zwl098/lx-music-desktop.git"
+    "url": "git+https://github.com/zwl098/Yusic-desktop.git"
   },
   "keywords": [
     "music-player",
@@ -103,9 +103,9 @@
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/zwl098/lx-music-desktop/issues"
+    "url": "https://github.com/zwl098/Yusic-desktop/issues"
   },
-  "homepage": "https://github.com/zwl098/lx-music-desktop#readme",
+  "homepage": "https://github.com/zwl098/Yusic-desktop#readme",
   "devDependencies": {
     "@babel/core": "^7.29.0",
     "@babel/eslint-parser": "^7.28.6",

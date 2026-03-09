@@ -14,7 +14,7 @@ export const openDirInExplorer = (dir: string) => {
  * 在浏览器打开URL
  * @param {*} url
  */
-export const openUrl = async(url: string) => {
+export const openUrl = async (url: string) => {
   if (!/^https?:\/\//.test(url)) return
   await shell.openExternal(url)
 }
@@ -38,7 +38,7 @@ export const clipboardReadText = (): string => {
 
 
 export const encodePath = (path: string) => {
-  // https://github.com/lyswhut/lx-music-desktop/issues/963
-  // https://github.com/lyswhut/lx-music-desktop/issues/1461
+  // https://github.com/lyswhut/Yusic-desktop/issues/963
+  // https://github.com/lyswhut/Yusic-desktop/issues/1461
   return path.replaceAll('%', '%25').replaceAll('#', '%23')
 }

@@ -29,7 +29,7 @@ const parseExtendedLyric = (lrcLinesMap, extendedLyric) => {
     if (result) {
       const timeField = result[0]
       const text = line.replace(timeFieldExp, '').trim()
-      // https://github.com/lyswhut/lx-music-desktop/issues/1499
+      // https://github.com/lyswhut/Yusic-desktop/issues/1499
       if (text && text != '//') {
         const times = timeField.match(timeExp)
         if (times == null) continue
@@ -44,7 +44,7 @@ const parseExtendedLyric = (lrcLinesMap, extendedLyric) => {
 }
 
 export default class LinePlayer {
-  constructor({ offset = 0, rate = 1, onPlay = function() { }, onSetLyric = function() { } } = {}) {
+  constructor({ offset = 0, rate = 1, onPlay = function () { }, onSetLyric = function () { } } = {}) {
     this.tags = {}
     this.lines = null
     this.onPlay = onPlay

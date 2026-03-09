@@ -1,5 +1,5 @@
 {
-	// Place your lx-music-desktop-new 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// Place your Yusic-desktop-new 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
 	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
 	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
@@ -15,20 +15,20 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-  "use i18n": {
+	"use i18n": {
 		"prefix": "ui18n",
 		"body": [
 			"import { useI18n } from '@renderer/plugins/i18n'",
 			"${1:const t = useI18n()}"
 		]
 	},
-  "list action": {
+	"list action": {
 		"prefix": "listacion",
 		"body": [
 			"import { $1 } from '@renderer/store/list/action'",
 		]
 	},
-  "import vue tools": {
+	"import vue tools": {
 		"prefix": "imvt",
 		"body": [
 			"import { $1 } from '@common/utils/vueTools'",

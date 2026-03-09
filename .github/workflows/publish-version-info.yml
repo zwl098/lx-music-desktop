@@ -12,5 +12,5 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.PAT }}
-          repository: zwl098/lx-music-desktop-version-info
+          repository: zwl098/Yusic-desktop-version-info
           event-type: npm-release

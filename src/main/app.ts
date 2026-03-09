@@ -201,7 +201,7 @@ export const listenerAppEvent = (startApp: () => void) => {
     })
 
     // disable create dictionary
-    // https://github.com/lyswhut/lx-music-desktop/issues/773
+    // https://github.com/lyswhut/Yusic-desktop/issues/773
     contents.session.setSpellCheckerDictionaryDownloadURL('http://0.0.0.0')
   })
 
@@ -288,18 +288,18 @@ const backupDB = (backupPath: string) => {
   const dbPath = path.join(global.lxDataPath, 'lx.data.db')
   try {
     renameSync(dbPath, backupPath)
-  } catch {}
+  } catch { }
   try {
     renameSync(`${dbPath}-wal`, `${backupPath}-wal`)
-  } catch {}
+  } catch { }
   try {
     renameSync(`${dbPath}-shm`, `${backupPath}-shm`)
-  } catch {}
+  } catch { }
   openDirInExplorer(backupPath)
 }
 
 let isInitialized = false
-export const initAppSetting = async() => {
+export const initAppSetting = async () => {
   if (!global.lx.inited) {
     const config = await initHotKey()
     global.lx.hotKey.config.local = config.local

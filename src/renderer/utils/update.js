@@ -8,16 +8,16 @@ const name = pkg.name
 
 const address = [
   [`https://raw.githubusercontent.com/${author}/${name}/master/publish/version.json`, 'direct'],
-  ['https://registry.npmjs.org/lx-music-desktop-version-info/latest', 'npm'],
+  ['https://registry.npmjs.org/Yusic-desktop-version-info/latest', 'npm'],
   [`https://cdn.jsdelivr.net/gh/${author}/${name}/publish/version.json`, 'direct'],
   [`https://fastly.jsdelivr.net/gh/${author}/${name}/publish/version.json`, 'direct'],
   [`https://gcore.jsdelivr.net/gh/${author}/${name}/publish/version.json`, 'direct'],
-  ['https://registry.npmmirror.com/lx-music-desktop-version-info/latest', 'npm'],
-  ['https://gitee.com/lyswhut/lx-music-desktop-versions/raw/master/version.json', 'direct'],
+  ['https://registry.npmmirror.com/Yusic-desktop-version-info/latest', 'npm'],
+  ['https://gitee.com/lyswhut/Yusic-desktop-versions/raw/master/version.json', 'direct'],
   ['http://cdn.stsky.cn/lx-music/desktop/version.json', 'direct'],
 ]
 
-const request = async(url, retryNum = 0) => {
+const request = async (url, retryNum = 0) => {
   return new Promise((resolve, reject) => {
     httpGet(url, {
       timeout: 10000,
@@ -31,14 +31,14 @@ const request = async(url, retryNum = 0) => {
   })
 }
 
-const getDirectInfo = async(url) => {
+const getDirectInfo = async (url) => {
   return request(url).then(info => {
     if (info.version == null) throw new Error('failed')
     return info
   })
 }
 
-const getNpmPkgInfo = async(url) => {
+const getNpmPkgInfo = async (url) => {
   return request(url).then(json => {
     if (!json.versionInfo) throw new Error('failed')
     const info = JSON.parse(json.versionInfo)
@@ -47,7 +47,7 @@ const getNpmPkgInfo = async(url) => {
   })
 }
 
-export const getVersionInfo = async(index = 0) => {
+export const getVersionInfo = async (index = 0) => {
   const [url, source] = address[index]
   let promise
   switch (source) {
@@ -59,7 +59,7 @@ export const getVersionInfo = async(index = 0) => {
       break
   }
 
-  return promise.catch(async(err) => {
+  return promise.catch(async (err) => {
     index++
     if (index >= address.length) throw err
     return getVersionInfo(index)
