@@ -1,34 +1,17 @@
-<p align="center"><a href="https://github.com/lyswhut/Yusic-desktop"><img width="200" src="https://github.com/lyswhut/Yusic-desktop/blob/master/doc/images/icon.png" alt="lx-music logo"></a></p>
+<p align="center"><a href="https://github.com/lyswhut/Yusic-desktop"><img width="200" src="./doc/images/icon.png" alt="Yusic-desktop logo"></a></p>
 
 <h1 align="center">Yusic 桌面版</h1>
 
 <p align="center">
-  <a href="https://github.com/lyswhut/Yusic-desktop/releases"><img src="https://img.shields.io/github/release/lyswhut/Yusic-desktop" alt="Release version"></a>
-  <a href="https://github.com/lyswhut/Yusic-desktop/actions/workflows/release.yml"><img src="https://github.com/lyswhut/Yusic-desktop/workflows/Build/badge.svg" alt="Build status"></a>
-  <a href="https://github.com/lyswhut/Yusic-desktop/actions/workflows/beta-pack.yml"><img src="https://github.com/lyswhut/Yusic-desktop/workflows/Build%20Beta/badge.svg" alt="Build status"></a>
-  <a href="https://electronjs.org/releases/stable"><img src="https://img.shields.io/github/package-json/dependency-version/lyswhut/Yusic-desktop/dev/electron/master" alt="Electron version"></a>
-  <!-- <a href="https://github.com/lyswhut/Yusic-desktop/releases"><img src="https://img.shields.io/github/downloads/lyswhut/Yusic-desktop/latest/total" alt="Downloads"></a> -->
-  <a href="https://github.com/lyswhut/Yusic-desktop/tree/dev"><img src="https://img.shields.io/github/package-json/v/lyswhut/Yusic-desktop/dev" alt="Dev branch version"></a>
-  <!-- <a href="https://github.com/lyswhut/Yusic-desktop/blob/master/LICENSE"><img src="https://img.shields.io/github/license/lyswhut/Yusic-desktop" alt="License"></a> -->
+  <a href="https://github.com/zwl098/Yusic-desktop/releases"><img src="https://img.shields.io/github/release/zwl098/Yusic-desktop" alt="Release version"></a>
+  <a href="https://github.com/zwl098/Yusic-desktop/actions/workflows/release.yml"><img src="https://github.com/zwl098/Yusic-desktop/workflows/Build/badge.svg" alt="Build status"></a>
+  <a href="https://github.com/zwl098/Yusic-desktop/actions/workflows/beta-pack.yml"><img src="https://github.com/zwl098/Yusic-desktop/workflows/Build%20Beta/badge.svg" alt="Build status"></a>
+  <a href="https://electronjs.org/releases/stable"><img src="https://img.shields.io/github/package-json/dependency-version/zwl098/Yusic-desktop/dev/electron/master" alt="Electron version"></a>
+  <a href="https://github.com/zwl098/Yusic-desktop/releases"><img src="https://img.shields.io/github/downloads/zwl098/Yusic-desktop/latest/total" alt="Downloads"></a>
+  <a href="https://github.com/zwl098/Yusic-desktop/tree/dev"><img src="https://img.shields.io/github/package-json/v/zwl098/Yusic-desktop/master" alt="Dev branch version"></a>
+  <a href="https://github.com/zwl098/Yusic-desktop/blob/master/LICENSE"><img src="https://img.shields.io/github/license/zwl098/Yusic-desktop" alt="License"></a>
 </p>
 
-<!-- [![GitHub release][1]][2]
-[![Build status][3]][4]
-[![GitHub Releases Download][5]][6]
-[![dev branch][7]][8]
-[![GitHub license][9]][10] -->
-
-<!-- [1]: https://img.shields.io/github/release/lyswhut/Yusic-desktop
-[2]: https://github.com/lyswhut/Yusic-desktop/releases
-[3]: https://ci.appveyor.com/api/projects/status/flrsqd5ymp8fnte5?svg=true
-[4]: https://ci.appveyor.com/project/lyswhut/Yusic-desktop
-[5]: https://img.shields.io/github/downloads/lyswhut/Yusic-desktop/latest/total
-[5]: https://img.shields.io/github/downloads/lyswhut/Yusic-desktop/total
-[6]: https://github.com/lyswhut/Yusic-desktop/releases
-[7]: https://img.shields.io/github/package-json/v/lyswhut/Yusic-desktop/dev
-[8]: https://github.com/lyswhut/Yusic-desktop/tree/dev
-[9]: https://img.shields.io/github/license/lyswhut/Yusic-desktop
-[10]: https://github.com/lyswhut/Yusic-desktop/blob/master/LICENSE -->
 
 <p align="center">一个基于 Electron & Vue 开发的音乐软件</p>
 
@@ -41,31 +24,27 @@
 
 已支持的平台：
 
-- Linux
-- macOS
 - Windows 7 及以上
 
-*移动版项目地址：https://github.com/lyswhut/lx-music-mobile*
 
-*Yusic 项目发展调整与新项目计划：https://github.com/lyswhut/Yusic-desktop/issues/1912*
 
-软件变化请查看[更新日志](https://github.com/lyswhut/Yusic-desktop/blob/master/CHANGELOG.md)。
+软件变化请查看[更新日志](https://github.com/zwl098/Yusic-desktop/blob/master/CHANGELOG.md)。
 
-软件下载请查看 [GitHub Releases](https://github.com/lyswhut/Yusic-desktop/releases)。
+软件下载请查看 [GitHub Releases](https://github.com/zwl098/Yusic-desktop/releases)。
 
-使用常见问题请参阅[桌面版常见问题](https://lyswhut.github.io/lx-music-doc/desktop/faq)。
+使用常见问题请参阅[桌面版常见问题](https://zwl098.github.io/lx-music-doc/desktop/faq)。
 
-目前本项目的原始发布地址只有 [**GitHub**](https://github.com/lyswhut/Yusic-desktop/releases)，其他渠道均为第三方转载发布，与本项目无关！
+目前本项目的原始发布地址只有 [**GitHub**](https://github.com/zwl098/Yusic-desktop/releases)，其他渠道均为第三方转载发布，与本项目无关！
 
-为了提高使用门槛，本软件内的默认设置、UI 操作不以新手友好为目标，所以使用前建议先根据你的喜好浏览调整一遍软件设置，阅读一遍[音乐播放列表机制](https://lyswhut.github.io/lx-music-doc/desktop/faq/playlist)及[可用的鼠标、键盘快捷操作](https://lyswhut.github.io/lx-music-doc/desktop/faq/hotkey)。
+为了提高使用门槛，本软件内的默认设置、UI 操作不以新手友好为目标，所以使用前建议先根据你的喜好浏览调整一遍软件设置，阅读一遍[音乐播放列表机制](https://zwl098.github.io/lx-music-doc/desktop/faq/playlist)及[可用的鼠标、键盘快捷操作](https://zwl098.github.io/lx-music-doc/desktop/faq/hotkey)。
 
 ### Scheme URL 支持
 
-从 v1.17.0 起支持 Scheme URL，可以使用此功能在浏览器等场景下调用 Yusic，我们开发了一个[油猴脚本](https://github.com/lyswhut/lx-music-script#readme)配套使用。
+从 v1.17.0 起支持 Scheme URL，可以使用此功能在浏览器等场景下调用 Yusic，我们开发了一个[油猴脚本](https://github.com/zwl098/lx-music-script#readme)配套使用。
 
 脚本安装地址：[Yusic 辅助脚本](https://greasyfork.org/zh-CN/scripts/438148)。
 
-若你想自己调用 Yusic，可以参考文档「[Scheme URL 支持](https://lyswhut.github.io/lx-music-doc/desktop/scheme-url)」部分。
+
 
 ### 数据同步服务
 
@@ -73,7 +52,7 @@
 
 ### 开放 API 支持
 
-从 v2.7.0 起支持开放 API 服务。启用该功能后，将会在本地启动一个 HTTP 服务，提供播放器相关的接口供第三方软件调用，详情看文档「[开放 API 服务](https://lyswhut.github.io/lx-music-doc/desktop/open-api)」部分。
+从 v2.7.0 起支持开放 API 服务。启用该功能后，将会在本地启动一个 HTTP 服务，提供播放器相关的接口供第三方软件调用，详情看文档「[开放 API 服务](https://zwl098.github.io/lx-music-doc/desktop/open-api)」部分。
 
 ### 数据存储目录
 
@@ -99,21 +78,18 @@
 
 贡献代码步骤：
 
-1. 参照[源码使用方法](https://lyswhut.github.io/lx-music-doc/desktop/use-source-code)设置开发环境；
+1. 参照[源码使用方法](https://zwl098.github.io/lx-music-doc/desktop/use-source-code)设置开发环境；
 2. 克隆本仓库代码并切换至 `dev` 分支进行开发；
 3. 提交 PR 至 `dev` 分支。
 
-## 源码使用方法
-
-请参阅：<https://lyswhut.github.io/lx-music-doc/desktop/use-source-code>
 
 ## 项目协议
 
-本项目基于 [Apache License 2.0](https://github.com/lyswhut/Yusic-desktop/blob/master/LICENSE) 许可证发行，以下协议是对于 Apache License 2.0 的补充，如有冲突，以以下协议为准。
+本项目基于 [Apache License 2.0](https://github.com/zwl098/Yusic-desktop/blob/master/LICENSE) 许可证发行，以下协议是对于 Apache License 2.0 的补充，如有冲突，以以下协议为准。
 
 ---
 
-*词语约定：本协议中的“本项目”指 Yusic（洛雪音乐助手）桌面版项目；“使用者”指签署本协议的使用者；“官方音乐平台”指对本项目内置的包括酷我、酷狗、咪咕等音乐源的官方平台统称；“版权数据”指包括但不限于图像、音频、名字等在内的他人拥有所属版权的数据。*
+*词语约定：本协议中的“本项目”指 Yusic（瑜音乐）桌面版项目；“使用者”指签署本协议的使用者；“官方音乐平台”指对本项目内置的包括酷我、酷狗、咪咕等音乐源的官方平台统称；“版权数据”指包括但不限于图像、音频、名字等在内的他人拥有所属版权的数据。*
 
 ### 一、数据来源
 
@@ -159,4 +135,5 @@
 
 ---
 
-若对此有疑问请 mail to: lyswhut+qq.com (请将 `+` 替换为 `@`)
+  本项目由<a href="https://github.com/lyswhut/lx-music-desktop">洛雪音乐桌面版</a>二次开发而来，感谢原作者的辛勤付出！
+

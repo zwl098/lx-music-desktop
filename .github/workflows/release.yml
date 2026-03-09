@@ -2,8 +2,9 @@ name: Build
 
 on:
   push:
-    branches:
-      - master
+    tags:
+      - 'v*'
+  workflow_dispatch:
 
 env:
   IS_CI: 'true'
