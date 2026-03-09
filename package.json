@@ -1,6 +1,6 @@
 {
   "name": "lx-music-desktop",
-  "version": "2.13.1",
+  "version": "2.13.2",
   "description": "一个免费的音乐播放器",
   "main": "./dist/main.js",
   "scripts": {
